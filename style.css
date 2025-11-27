@@ -1,0 +1,168 @@
+/* ============= BASIS ============= */
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1e5226;
+}
+
+/* ============= HEADER MENU ============= */
+
+.header {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff22;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 12px 0;
+    margin-bottom: 25px;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.header nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header nav a:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+/* ============= SPELER CONTAINER ============= */
+
+.player-container {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.flyer {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* AUDIO PLAYER BOX */
+.audio-player {
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background:#2f6e39;
+}
+
+/* PLAY BUTTON */
+.play-button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    font-size: 38px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px #00000044;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PULSE ANIMATIE BIJ AFSPELEN */
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,255,255,0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 20px 12px rgba(255,255,255,0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+}
+
+/* SLIDER */
+#progress {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 12px;
+    border-radius: 10px;
+    background: #ffffff88;
+    outline: none;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* TIJD */
+.time {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+
+
+/* =====================================================
+   INDIVIDUELE PAGINA KLEUREN (BODY + AUDIO PLAYER)
+   ===================================================== */
+
+/* ---------- PAGINA 1 ---------- */
+body.page1 {
+    background: #E56313;
+}
+
+body.page1 .audio-player {
+    background: #FA660A;
+}
+
+/* ---------- PAGINA 2 ---------- */
+body.page2 { 
+    background: #E6B908;
+}
+
+body.page2 .audio-player {
+    background: #FFCB00;
+}
+
+/* ---------- PAGINA 3 ---------- */
+body.page3 {
+    background: #006FB9;
+}
+
+body.page3 .audio-player {
+    background: #006FB9;
+}
+
+/* ---------- PAGINA 4 ---------- */
+body.page4 {
+    background: #2751A1;
+}
+
+body.page4 .audio-player {
+    background: #21468C;
+}
